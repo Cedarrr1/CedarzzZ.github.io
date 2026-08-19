@@ -28,12 +28,12 @@
 	  
 	<!-- <meta name="google-site-verification" content="u_--0s_Uw50r4zCgRrzltkmFhNCduYOJwPGlKVTuNJU" /> -->
 
-  <title>Jun CEN</title>
-  <meta name="description" lang="en" content="This is an academic website for Will Hua">
-  <meta name="keywords" lang="en" content="Jun CEN" />
+  <title>Xuesong Zeng | Academic Homepage</title>
+  <meta name="description" lang="en" content="Academic homepage of Xuesong Zeng, an undergraduate researcher in spatio-temporal data mining and LLM reasoning.">
+  <meta name="keywords" lang="en" content="Xuesong Zeng, 曾雪松, Spatio-Temporal Data Mining, LLM Reasoning" />
   
 
-  <link rel="shortcut icon" href="images/J.jpeg">
+  <link rel="shortcut icon" href="images/self-potrait.jpg">
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -74,6 +74,140 @@
         top: 0;
         white-space: nowrap;
     }
+
+    /* Keep the inherited components available for future updates without exposing the original author's content. */
+    .timeline-body,
+    .pub:not([data-current]),
+    .github-card:not([data-current]) {
+        display: none !important;
+    }
+
+    .beyond-image {
+        display: block;
+        width: min(100%, 760px);
+        max-height: 420px;
+        margin: 20px 0 0;
+        object-fit: cover;
+        object-position: center 62%;
+    }
+
+    .project-section {
+        max-width: 964px;
+        margin: 10px auto 0;
+    }
+
+    .left-aligned .card-container {
+        justify-content: flex-start;
+        width: min(940px, 100%);
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .honor-summary {
+        margin: 0 0 14px;
+        color: #555;
+        font-weight: 600;
+    }
+
+    .bio-label {
+        display: inline-block;
+        min-width: 132px;
+        margin-right: 8px;
+        color: #9b3022;
+        font-family: Arial, sans-serif;
+        font-size: 0.78em;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        vertical-align: baseline;
+    }
+
+    .award-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin: 22px 0 26px;
+    }
+
+    .award-gallery a {
+        display: block;
+        border: 1px solid #d7d7d7;
+        background: #fff;
+    }
+
+    .award-gallery img {
+        display: block;
+        width: 100%;
+        height: 220px;
+        object-fit: contain;
+    }
+
+    .after-item {
+        display: grid;
+        grid-template-columns: minmax(260px, 42%) 1fr;
+        gap: 24px;
+        align-items: start;
+        margin: 18px 0 28px;
+    }
+
+    .after-item .beyond-image {
+        grid-column: 1;
+        grid-row: 1;
+        width: 100%;
+        max-height: 260px;
+        margin: 0;
+        object-position: center;
+    }
+
+    .after-copy {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .after-copy .reviewer-title {
+        margin-top: 0;
+    }
+
+    .after-title {
+        margin: 0 0 6px;
+        font-size: 21px;
+    }
+
+    .after-role {
+        margin: 0 0 10px;
+        color: #555;
+        font-weight: 600;
+    }
+
+    .after-points {
+        margin: 0 0 0 20px;
+        padding: 0;
+    }
+
+    .after-points li {
+        margin-bottom: 6px;
+    }
+
+    @media (max-width: 700px) {
+        .after-item {
+            display: block;
+        }
+
+        .after-item .beyond-image {
+            margin: 12px 0 16px;
+            max-height: 280px;
+        }
+
+        .award-gallery {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    #profile-avatar {
+        height: 168px;
+        object-fit: cover;
+        object-position: 55% 35%;
+    }
   </style>
   
 
@@ -106,8 +240,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="page-link" href="#publications"><b>Publications</b></a>
     <a class="page-link" href="#codebase"><b>GitHub</b></a>
     <a class="page-link" href="#awards"><b>Honors & Awards</b></a>
-    <a class="page-link" href="#academicservices"><b>Academic Services </b></a>
-    <!--<a class="page-link" href="#otherprojects">Projects</a>-->
+    <a class="page-link" href="#academicservices"><b>After Research</b></a>
+    <a class="page-link" href="#projects"><b>Projects</b></a>
     <!-- Button for Posts -->
   </div>
 </nav>
@@ -117,33 +251,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div id="profile-cover" class="cover shallow-bg img-responsive"> 
     <div id="profile-namecard" class="profile-wrapper wrapper-light">
       <div id="my-pic" class="profile-col profile-col-1">
-        <img id="profile-avatar" src="images/myself.jpg" alt="Me" class="circle-img border-dark"-/>
+        <img id="profile-avatar" src="images/self-potrait.jpg" alt="Portrait of Xuesong Zeng" class="circle-img border-dark"-/>
       </div>
       <div id="my-contact" class="profile-col profile-col-2">
         <div id="my-name" class="text-grey-dark">
-          Jun CEN<br>
+          Xuesong Zeng<br>
         </div>
         <div id="my-title" class="text-grey">
-          JD Explore Academy
+          Undergraduate Researcher<br>Central South University
         </div>
         <div id="my-email" class="text-grey-light">
-          jcenaa [at] connect.ust.hk
+          xuesong.zeng [at] csu.edu.cn
         </div>
 
 	</div>
         <div class="social-media">
-          <a href="https://scholar.google.com/citations?user=7SKAhBwAAAAJ&hl=en" target="_blank" class="icon-button linkedin">
-          <i class="ai ai-google-scholar-square icon-linkedin"></i>
+          <a href="https://github.com/Cedarrr1" target="_blank" rel="noopener noreferrer" class="icon-button github" aria-label="GitHub">
+          <i class="fa fa-github icon-github"></i>
             <span></span>
           </a>
 
-          <a href="https://github.com/Jun-CEN" target="_blank" class="icon-button github">
-            <i class="fa fa-github icon-github"></i>
+          <a href="https://openreview.net/profile?id=~XueSong_Zeng1" target="_blank" rel="noopener noreferrer" class="icon-button linkedin" aria-label="OpenReview">
+            <i class="fa fa-file-text-o icon-linkedin"></i>
             <span></span>
           </a>
 
-          <a href="https://www.linkedin.com/in/jun-cen-45b995219/" target="_blank" class="icon-button linkedin">
-            <i class="fa fa-linkedin icon-linkedin"></i>
+          <a href="https://orcid.org/0009-0003-2928-641X" target="_blank" rel="noopener noreferrer" class="icon-button linkedin" aria-label="ORCID">
+            <i class="ai ai-orcid icon-linkedin"></i>
             <span></span>
           </a>
          
@@ -151,12 +285,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <i class="ai ai-cv icon-github"></i>
             <span></span>
           </a> -->
-          <a href="https://www.xiaohongshu.com/user/profile/616ae887000000000201f2fa" class="icon-button xiaohongshu" aria-label="小红书" target="_blank" rel="noopener noreferrer">
-            <i> <img src="https://cdn.simpleicons.org/xiaohongshu/FF2D55" alt="" width="45" height="45" style="vertical-align:middle;"> </i>
+          <a href="data/XuesongZeng_CV.pdf" class="icon-button github" aria-label="Curriculum Vitae" target="_blank" rel="noopener noreferrer">
+            <i class="ai ai-cv icon-github"></i>
             <span></span>
           </a>
 
-          <a href="mailto:jcenaa@connect.ust.hk" target="_blank" class="icon-button linkedin">
+          <a href="mailto:xuesong.zeng@csu.edu.cn" class="icon-button linkedin" aria-label="Email">
             <i class="fa fa-envelope icon-linkedin"></i>
             <span></span>
           </a>
@@ -223,14 +357,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     About
   </h1>
   <div class="bio-body" style="overflow:hidden;">
-    <p>
-      I am an researcher in <a href="https://baike.baidu.com/item/%E4%BA%AC%E4%B8%9C%E6%8E%A2%E7%B4%A2%E7%A0%94%E7%A9%B6%E9%99%A2/58115352" target="_blank">JD Explore Academy</a>, where I focus on embodied AI.
-I got my Ph.D. at the <a href="http://ri.ust.hk" target="_blank">Robotics Institute</a>, <a href="https://www.ust.hk" target="_blank">The Hong Kong University of Science and Technology</a>, where I work on computer vision and autonomous driving under the supervision of <a href="https://cqf.io/" target="_blank">Prof. Qifeng Chen</a> and <a href="https://scholar.google.com/citations?user=Oo7c22wAAAAJ&hl=zh-CN" target="_blank">Prof. Michael Yu Wang</a>.
- 
-I'm always looking for related colaboration. If you are interested to chat with me, feel free to drop me an <a href="mailto:jcenaa@connect.ust.hk" target="_blank">email</a>.
-
-      <br>
-    </p>
+    <p><span class="bio-label">Background</span> I am a fourth-year undergraduate student in the School of Computer Science and Engineering at <a href="https://en.csu.edu.cn/" target="_blank" rel="noopener noreferrer">Central South University</a>, expected to graduate in 2027.</p>
+    <p><span class="bio-label">Research experience</span> Since June 2025, I have worked at the <a href="https://senzhangwangcsu.github.io/index.html" target="_blank" rel="noopener noreferrer">BigData 4 Urban Intelligence Lab</a> under the supervision of <a href="https://scholar.google.com/citations?user=zdWyGRMAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener noreferrer">Senzhang Wang</a> and <a href="https://haomiao.website/" target="_blank" rel="noopener noreferrer">Miao Hao</a>, contributing to <i>ViCO</i>, accepted to CIKM 2026. I also conduct agent research as a research assistant at the <a href="https://di.ustc.edu.cn/_upload/tpl/17/27/5927/template5927/main.htm" target="_blank" rel="noopener noreferrer">Data Intelligence Laboratory (DILab)</a>, USTC, under the supervision of <a href="http://home.ustc.edu.cn/~pengkun/index.html" target="_blank" rel="noopener noreferrer">Pengkun Wang</a>.</p>
+    <p><span class="bio-label">Research interests</span> My interests include <b>spatio-temporal data mining</b> and <b>LLM reasoning</b>. I am interested in connecting spatio-temporal intelligence with the general reasoning capabilities of language models.</p>
+    <p><span class="bio-label">Next step</span> I have received master's offers from the University of Science and Technology of China and Renmin University of China through the recommendation-based admission program, and plan to continue toward a master's degree after graduation.</p>
 
     <div style="width: 50%; float:left">
 			<h3>
@@ -239,16 +369,9 @@ I'm always looking for related colaboration. If you are interested to chat with 
 			</h3>
       <ul>
         <!-- <li><b>Multi-modality</b></li> -->
-        <li><b>Embodied AI, Multi-modality LLM</b></li>
-        <a href="https://arxiv.org/abs/2607.24744" target="_blank">[Data Pyramid]</a><a href="https://arxiv.org/pdf/2511.17502" target="_blank">[RynnVLA-002]</a><a href="https://arxiv.org/pdf/2506.21539" target="_blank">[WorldVLA]</a><a href="https://arxiv.org/pdf/2509.15212" target="_blank">[RynnVLA-001]</a><a href="https://neurips.cc/virtual/2025/poster/120127" target="_blank">[HiMaCon]</a><a href="https://arxiv.org/pdf/2509.19460" target="_blank">[SEIL]</a><a href="https://arxiv.org/pdf/2503.03464" target="_blank">[Survey]</a><a href="https://arxiv.org/abs/2402.10534" target="_blank">[VLP]</a><a href="https://ieeexplore.ieee.org/abstract/document/9681231" target="_blank">[VPN]</a>
-        <li><b>Autonomous Driving</b></li>
-        <a href="https://arxiv.org/abs/2403.13261" target="_blank">[STC]</a><a href="https://arxiv.org/abs/2207.01452" target="_blank">[REAL]</a><a href="https://arxiv.org/abs/2108.04562" target="_blank">[DML]</a><a href="https://arxiv.org/abs/2112.01135" target="_blank">[MLUC]</a>
-        <li><b>3D Segmentation</b></li>
-        <a href="https://arxiv.org/abs/2409.08083" target="_blank">[SimMAT]</a><a href="https://arxiv.org/abs/2403.17010" target="_blank">[Calib3D]</a><a href="https://arxiv.org/abs/2305.14207" target="_blank">[Segment Any RGBD]</a><a href="https://arxiv.org/abs/2306.09347" target="_blank">[Segment Any Point Cloud]</a><a href="https://arxiv.org/abs/2405.10305" target="_blank">[PSG-4D]</a><a href="https://arxiv.org/abs/2307.04091" target="_blank">[CMDFusion]</a>
-        <li><b>Open-set Recognition</b></li>
-        <a href="https://openreview.net/forum?id=xLr0I_xYGAs" target="_blank">[UOSR]</a><a href="https://arxiv.org/abs/2303.15467" target="_blank">[PSL]</a>
-        <li><b>Continual Learning</b></li>
-        <a href="https://arxiv.org/abs/2403.08568" target="_blank">[CPrompt]</a><a href="https://arxiv.org/abs/2211.00833" target="_blank">[FrameMaker]</a><a href="https://ieeexplore.ieee.org/abstract/document/9665922" target="_blank">[KD-TIL]</a>
+        <li><b>Spatio-Temporal Data Mining</b></li>
+        <li><b>LLM Reasoning</b></li>
+        <li><b>Agentic Systems</b></li>
       </ul>
     </div>
 
@@ -257,20 +380,10 @@ I'm always looking for related colaboration. If you are interested to chat with 
 				<i class="fa fa-graduation-cap" aria-hidden="true"></i>
 				<strong>Education</strong>
 			</h3>
-			<b>The Hong Kong University of Science and Technology</b><br>
-			<ul>
-        <li>Ph.D in Robotics, Sep. 2020 - Oct. 2024</li>
-        <li>Mentor: <a href="https://cqf.io/" target="_blank">Prof. Qifeng Chen</a> and <a href="https://scholar.google.com/citations?user=Oo7c22wAAAAJ&hl=zh-CN" target="_blank">Prof. Michael Yu Wang</a> </li>
-      </ul>
-      <b>The Hong Kong University of Science and Technology</b><br>
-        <ul>
-          <li>M.Sc in Mechanical Engineering, Sep. 2019 - Oct. 2020</li>
-          <li>Mentor: <a href="https://seng.hkust.edu.hk/about/people/faculty/lilong-cai" target="_blank">Prof. Lilong Cai</a></li>
-        </ul>
-      <b>Zhejiang University</b><br>
+			<b>Central South University</b><br>
       <ul>
-        <li>B.Eng in Mechatronics Engineering, Sep. 2015 - Oct. 2019</li>
-        <li>Mentor: <a href="http://me.zju.edu.cn/meenglish/2016/1129/c15493a734703/page.htm" target="_blank">Prof. Jinghua Xu</a></li>
+        <li>B.Eng. in Computer Science and Technology, Sep. 2023 - Jun. 2027 (expected)</li>
+        <li>GPA: 90.47/100; Rank: 22/258 (Top 10%)</li>
       </ul>
     </div>
   
@@ -302,21 +415,50 @@ I'm always looking for related colaboration. If you are interested to chat with 
 
       <div class="timeline-item">
         <div class="timeline-date">
-          <img class="social-icon" src="images/jd_2.png"/>
-          Feb, 2026 - Now
+          <img class="social-icon" src="images/ustc-logo.png" alt="USTC logo"/>
+          May, 2026 - Now
         </div>
         <div class="timeline-title">
-          Researcher @ <a href="https://baike.baidu.com/item/%E4%BA%AC%E4%B8%9C%E6%8E%A2%E7%B4%A2%E7%A0%94%E7%A9%B6%E9%99%A2/58115352" target="_blank">JD Explore Academy</a>
+          Research Assistant @ <a href="https://di.ustc.edu.cn/_upload/tpl/17/27/5927/template5927/main.htm" target="_blank" rel="noopener noreferrer">DILab, USTC</a>
         </div>
         <div class="timeline-desc">
-          <b> Focus on Embodied AI and World Action Models. </b>
+          <b>Focus on LLM reasoning and agent research.</b>
           <div class="timeline-host">
-            <!-- Supervisor: <a href="https://prokia.github.io/">Shuangjia Zheng</a> -->
+            Supervisor: <a href="http://home.ustc.edu.cn/~pengkun/index.html" target="_blank" rel="noopener noreferrer">Pengkun Wang</a>
           </div>
         </div>
       </div>
-    
-  
+      <div class="timeline-item">
+        <div class="timeline-date">
+          <img class="social-icon" src="images/nus-logo.png" alt="NUS logo"/>
+          Jun, 2025 - Jul, 2025
+        </div>
+        <div class="timeline-title">
+          Visiting Student @ NUS
+        </div>
+        <div class="timeline-desc">
+          <b>Focused on AIoT full-stack systems, spanning intelligent perception, edge computing, and system deployment.</b>
+          <div class="timeline-host">
+            Supervisor: <a href="https://scholar.google.com/citations?user=ROHLdtUAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Wee-Kek Tan</a>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">
+          <img class="social-icon" src="images/csu-logo.png" alt="Central South University logo"/>
+          Jun, 2025 - Now
+        </div>
+        <div class="timeline-title">
+          Research Assistant @ <a href="https://senzhangwangcsu.github.io/index.html" target="_blank" rel="noopener noreferrer">BD4UI Lab, CSU</a>
+        </div>
+        <div class="timeline-desc">
+          <b>Focus on spatio-temporal data mining.</b>
+          <div class="timeline-host">
+            Supervisors: <a href="https://scholar.google.com/citations?user=zdWyGRMAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener noreferrer">Senzhang Wang</a> and <a href="https://haomiao.website/" target="_blank" rel="noopener noreferrer">Miao Hao</a>
+          </div>
+        </div>
+      </div>
+
     <div class="timeline-body">
       <div class="timeline-item">
         <div class="timeline-date">
@@ -435,34 +577,34 @@ I'm always looking for related colaboration. If you are interested to chat with 
 <div id="publications" class="publications">
   <h1 class="md-heading text-left">
     <i class="fa fa-file" aria-hidden="true"></i>
-    Publications (<button class="custom-button" id="show-selected-btn"> Show Representative </button> / <button class="custom-button" id="show-all-btn"> Show All </button>)
+    Publications
   </h1>
 
 
 
   <div class="pub-list">
 
-    <div class="pub" data-selected="true">
+    <div class="pub" data-current data-selected="true">
       <div class="pub-left">
-        <img class="intro-img frame" src="images/data_pyramid.png">
+        <img class="intro-img frame" src="images/ViCO.png" alt="ViCO overview">
       </div>
       <div class="pub-right">
         <div class="title">
-          Data Pyramid for Embodied Manipulation
+          ViCO: Vision-Augmented Time Series Anomaly Detection with Prototype-Guided Coordination
         </div>
         <div class="authors">
           <font style="font-size: 11pt;">
-            Yifan Ye*, Yankai Fu*, Yaoxu Lv*, Bohan Hou*, <b>Jun Cen*&#8224;</b>, Lingdong Kong*, Duo Zheng, Tianxing Chen, Jiaming Liu, Ziang Cao, Yunfan Lou, Wei Chow, Xian Sun, Yingshuo Wang, Kuangzhi Ge, Xiaowei Chi, Xidong Zhang, Zhibo Pang, Yiwu Zhong, Sirui Han, Zhihe Lu, Weihao Yuan, Qifeng Chen, Michael Yu Wang, Yao Mu, Ziwei Liu, Jianfei Yang, Ping Luo, Shanghang Zhang
+            <b>Xuesong Zeng</b>, Mingjun Cao, Hao Miao<sup>&dagger;</sup>, Chenxi Liu, Senzhang Wang<sup>&dagger;</sup><br>
+            <sup>&dagger;</sup> Co-corresponding authors
           </font>
         </div>
         <div class="publish">
-          <span class="place">Arxiv 2026</span>
+          <span class="place">CIKM 2026 Full Research Track</span>
           <span class="place"></span>
         </div>
         <div class="tags">
-          [<a class="tag" href="https://arxiv.org/abs/2607.24744" target="_blank">Paper</a>]
-          [<a class="tag" href="https://jasper-aaa.github.io/embodied-data-pyramid/" target="_blank">Project</a>]
-          [<a class="tag" href="https://github.com/worldbench/awesome-embodied-data-pyramid" target="_blank">Code</a>]
+          [<a class="tag" href="work/ViCO_CIKM26.pdf" target="_blank" rel="noopener noreferrer">Paper</a>]
+          [<a class="tag" href="https://github.com/Cedarrr1/ViCO" target="_blank" rel="noopener noreferrer">Code</a>]
         </div>
       </div>
     </div>
@@ -1215,6 +1357,26 @@ I'm always looking for related colaboration. If you are interested to chat with 
 </div>
 </div>
 	
+<div id="projects" class="publications project-section">
+  <h1 class="md-heading text-left">
+    <i class="fa fa-code" aria-hidden="true"></i>
+    Projects
+  </h1>
+  <div class="pub-list">
+    <div class="pub" data-current data-selected="true">
+      <div class="pub-left">
+        <img class="intro-img frame" src="images/fake-news.png" alt="Multimodal fake news detection platform">
+      </div>
+      <div class="pub-right">
+        <div class="title">Multimodal Detection and Trustworthy Explanation Platform for News</div>
+        <div class="authors"><font style="font-size: 11pt;"><b>Xuesong Zeng</b> - Team leader</font></div>
+        <div class="publish"><span class="place">Project, 2025</span></div>
+        <div class="tags">A two-stage workflow for image forensics, tampered-region localization, and evidence-based explanations for multimodal news.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- JavaScript to handle button clicks -->
 <script>
   // Get the buttons and publications
@@ -1222,37 +1384,19 @@ I'm always looking for related colaboration. If you are interested to chat with 
   const showAllBtn = document.getElementById('show-all-btn');
   const publications = document.querySelectorAll('.pub');
 
-  // Add event listener to 'Show Selected Publication' button
-  showSelectedBtn.addEventListener('click', function() {
-    publications.forEach(pub => {
-      if (pub.getAttribute('data-selected') === 'true') {
-        pub.style.display = 'block';  // Show selected publication
-      } else {
-        pub.style.display = 'none';  // Hide other publications
-      }
+  if (showSelectedBtn && showAllBtn) {
+    showSelectedBtn.addEventListener('click', function() {
+      publications.forEach(pub => { pub.style.display = pub.getAttribute('data-selected') === 'true' ? 'block' : 'none'; });
     });
-  });
-
-  // Add event listener to 'Show All' button
-  showAllBtn.addEventListener('click', function() {
-    publications.forEach(pub => {
-      pub.style.display = 'block';  // Show all publications
+    showAllBtn.addEventListener('click', function() {
+      publications.forEach(pub => { pub.style.display = 'block'; });
     });
-  });
+  }
 </script>
 
 <script>
   const repos = [
-    { owner: "alibaba-damo-academy", repo: "WorldVLA", starId: "star-count", forkId: "fork-count" },
-    { owner: "GAI4Manipulation", repo: "AwesomeGAIManipulation", starId: "star-count-2", forkId: "fork-count-2" },
-    { owner: "Jun-CEN", repo: "CMDFusion", starId: "star-count-3", forkId: "fork-count-3" },
-    { owner: "Jun-CEN", repo: "SegmentAnyRGBD", starId: "star-count-4", forkId: "fork-count-4" },
-    { owner: "Jun-CEN", repo: "PSL", starId: "star-count-5", forkId: "fork-count-5" },
-    { owner: "Jun-CEN", repo: "Unified-Open-Set-Recognition", starId: "star-count-6", forkId: "fork-count-6" },
-    { owner: "Jun-CEN", repo: "Open-world-3D-semantic-segmentation", starId: "star-count-7", forkId: "fork-count-7" },
-    { owner: "Jun-CEN", repo: "Open-World-Semantic-Segmentation", starId: "star-count-8", forkId: "fork-count-8" },
-    { owner: "Jingkang50", repo: "PSG4D", starId: "star-count-9", forkId: "fork-count-9" },
-    { owner: "youquanl", repo: "Segment-Any-Point-Cloud", starId: "star-count-10", forkId: "fork-count-10" }
+    { owner: "Cedarrr1", repo: "ViCO", starId: "star-count", forkId: "fork-count" }
   ];
 
   async function loadGitHubStats() {
@@ -1276,7 +1420,7 @@ I'm always looking for related colaboration. If you are interested to chat with 
 
 
 <div class="wrapper">
-  <div id="codebase" class="bio">
+  <div id="codebase" class="bio left-aligned">
     <div class="bio-body" style="overflow:hidden;">
       <h1 class="md-heading text-left">
         <i class="fa fa-tasks" aria-hidden="true"></i>
@@ -1284,20 +1428,20 @@ I'm always looking for related colaboration. If you are interested to chat with 
       </h1>  
       <div class="card-container">
 
-        <div class="github-card">
+        <div class="github-card" data-current>
           <div>
-            <a class="repo-link" href="https://github.com/alibaba-damo-academy/WorldVLA" target="_blank">
-              alibaba-damo-academy/<strong>WorldVLA</strong>
+            <a class="repo-link" href="https://github.com/Cedarrr1/ViCO" target="_blank" rel="noopener noreferrer">
+              Cedarrr1/<strong>ViCO</strong>
             </a>
             <span class="label">Project</span>
           </div>
           <div class="description">
-            WorldVLA: Towards Autoregressive Action World Model.
+            Vision-augmented time series anomaly detection with prototype-guided coordination.
           </div>
           <div class="meta">
             <div class="dot"></div>
             <div>Python</div>
-            <a href="https://github.com/alibaba-damo-academy/WorldVLA/stargazers" target="_blank">
+            <a href="https://github.com/Cedarrr1/ViCO/stargazers" target="_blank" rel="noopener noreferrer">
               <svg fill="currentColor" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
                 <path d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 
                 14.5L369.8 316.2 115.9 353.1c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 
@@ -1308,7 +1452,7 @@ I'm always looking for related colaboration. If you are interested to chat with 
               </svg>
               Star &nbsp;  <span id="star-count">–</span>
             </a>
-            <a href="https://github.com/alibaba-damo-academy/WorldVLA/network/members" target="_blank">
+            <a href="https://github.com/Cedarrr1/ViCO/network/members" target="_blank" rel="noopener noreferrer">
               <svg fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                 <path d="M14 4a2 2 0 1 0-2.47 1.94V7a.48.48 0 0 1-.27.44L8.49 
                 8.88l-2.76-1.4A.49.49 0 0 1 5.46 7V5.94a2 2 0 1 0-1 
@@ -1712,15 +1856,25 @@ I'm always looking for related colaboration. If you are interested to chat with 
   <div id="awards" class="bio">
     <h1 class="md-heading text-left">
       <i class="fa fa-tasks" aria-hidden="true"></i>
-      Selected Honors & Awards
+      Honors & Awards
     </h1>
+    <p class="honor-summary">Total of 5 national-level honors and 6 provincial-level awards.</p>
+    <h3>Selected awards</h3>
     <ul>
-  	<li> <a href="images/RI.jpeg" target="_blank">Outstanding Research Intern, Alibaba Group, 2023.</a> (15 candidates per year)</li>
-	<li> Overseas Research Award, HKUST, 2023.</li>
-	<li> Postgraduate Studentship, HKUST, 2020-2024.</li>
-	<li> School of Engineering Excellent Student Scholarship, HKUST, 2019-2020.</li>
-	<li> School of Engineering Entrance Scholarship, HKUST, 2019-2020.</li>
+      <li>National 3rd Prize<sup>*</sup>, 17th Service Outsourcing Innovation and Entrepreneurship Competition, AI Track (Jun. 2026).</li>
+      <li>National 3rd Prize<sup>*</sup>, 16th Service Outsourcing Innovation and Entrepreneurship Competition, Enterprise Track (Jun. 2025).</li>
+      <li>National, Computer Software Copyright<sup>**</sup> (May. 2026).</li>
+      <li>National 3rd Prize<sup>*</sup>, College Students Science and Technology Translation Competition (Sep. 2023).</li>
     </ul>
+    <p class="honor-legend"><sup>*</sup> First responsible person / team leader. <sup>**</sup> Second responsible person.</p>
+    <div class="award-gallery" aria-label="Selected award certificates">
+      <a href="images/award/music.pdf" target="_blank" rel="noopener noreferrer">
+        <img src="images/award/music.png" alt="National College Students Art Exhibition award certificate">
+      </a>
+      <a href="images/award/ai-award.pdf" target="_blank" rel="noopener noreferrer">
+        <img src="images/award/ai-award.png" alt="Service Outsourcing Innovation and Entrepreneurship Competition award certificate">
+      </a>
+    </div>
   </div>
 </div>
 
@@ -1766,29 +1920,29 @@ I'm always looking for related colaboration. If you are interested to chat with 
     <div class="bio-body" style="overflow:hidden;">
       <h1 class="md-heading text-left">
         <i class="fa fa-tasks" aria-hidden="true"></i>
-        Academic Services
+        After Research
       </h1>  
 
-      <div class="reviewer-title">Conference Reviewer:</div>
-      <div class="reviewer-section">
-        <div class="reviewer-column">Conference on Computer Vision and Pattern Recognition (CVPR)</div>
-        <div class="reviewer-column">International Conference on Computer Vision (ICCV)</div>
-        <div class="reviewer-column">European Conference on Computer Vision (ECCV)</div>
-        <div class="reviewer-column">Conference on Neural Information Processing Systems (NeurIPS)</div>
-        <div class="reviewer-column">International Conference on Learning Representations (ICLR)</div>
-        <div class="reviewer-column">International Conference on Machine Learning (ICML)</div>
-        <div class="reviewer-column">International Conference on Robotics and Automation (ICRA)</div>
-        <div class="reviewer-column">International Conference on Intelligent Robots and Systems (IROS)</div>
+      <div class="after-item">
+        <img class="beyond-image" src="images/orchestra.jpeg" alt="Central South University Orchestra performance">
+        <div class="after-copy">
+          <h3 class="after-title">Student Symphony Orchestra</h3>
+          <p class="after-role">Viola Section Leader, Central South University (Sep. 2023 - Present).</p>
+          <ul class="after-points">
+            <li>Performed in semester and New Year concerts.</li>
+            <li>Represented CSU in the 7th China College Students Art Exhibition and received the national gold award for instrumental ensemble.</li>
+          </ul>
+        </div>
       </div>
-
-      <div class="reviewer-title">Journal Reviewer:</div>
-      <div class="reviewer-section">
-        <div class="reviewer-column">International Journal of Computer Vision (IJCV)</div>
-        <div class="reviewer-column">Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</div>
-        <div class="reviewer-column">Transactions on Neural Networks and Learning Systems (TNNLS)</div>
-        <div class="reviewer-column">Transactions on Circuits and Systems for Video Technology (TCSVT)</div>
-        <div class="reviewer-column">Transactions on Multimedia (TMM)</div>
-        <div class="reviewer-column">Robotics and Automation Letters (RA-L)</div>
+      <div class="after-item">
+        <img class="beyond-image" src="images/iosclub.jpg" alt="Apple Lab at Central South University">
+        <div class="after-copy">
+          <h3 class="after-title">Apple Lab</h3>
+          <p class="after-role">Member, Apple Lab, Central South University (Sep. 2024 - Present).</p>
+          <ul class="after-points">
+            <li>Organized Innosed Minicamp, the first student-club hackathon at CSU and likely among the first student-club-organized hackathons at a Chinese university.</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -1809,40 +1963,36 @@ I'm always looking for related colaboration. If you are interested to chat with 
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
         <ul class="contact-list">
-          <li>Personal Email:</li>
-          <li><a href="mailto:">jcenaa [at] connect.ust.hk</a></li>
+          <li>Email:</li>
+          <li><a href="mailto:xuesong.zeng@csu.edu.cn">xuesong.zeng [at] csu.edu.cn</a></li>
         </ul>
       </div>
 
       <div class="footer-col  footer-col-2">
-          <a href="https://scholar.google.com/citations?user=7SKAhBwAAAAJ&hl=en" target="_blank" class="icon-button github">
-          <i class="ai ai-google-scholar-square icon-github"></i>
+          <a href="https://github.com/Cedarrr1" target="_blank" rel="noopener noreferrer" class="icon-button github" aria-label="GitHub">
+          <i class="fa fa-github icon-github"></i>
             <span></span>
           </a>
 
-          <a href="https://github.com/Jun-CEN" target="_blank" class="icon-button github">
-            <i class="fa fa-github icon-github"></i>
+          <a href="https://openreview.net/profile?id=~XueSong_Zeng1" target="_blank" rel="noopener noreferrer" class="icon-button linkedin" aria-label="OpenReview">
+            <i class="fa fa-file-text-o icon-linkedin"></i>
             <span></span>
           </a>
 
-          <a href="https://www.linkedin.com/in/jun-cen-45b995219/" target="_blank" class="icon-button linkedin">
-            <i class="fa fa-linkedin icon-linkedin"></i>
+          <a href="https://orcid.org/0009-0003-2928-641X" target="_blank" rel="noopener noreferrer" class="icon-button linkedin" aria-label="ORCID">
+            <i class="ai ai-orcid icon-linkedin"></i>
             <span></span>
           </a>
          
-          <!-- <a href="work/Resume_Jun_CEN.pdf" target="_blank" class="icon-button github">
+          <a href="data/XuesongZeng_CV.pdf" target="_blank" rel="noopener noreferrer" class="icon-button github" aria-label="Curriculum Vitae">
             <i class="ai ai-cv icon-github"></i>
-            <span></span>
-          </a> -->
-          <a href="https://www.xiaohongshu.com/user/profile/616ae887000000000201f2fa" class="icon-button xiaohongshu" aria-label="小红书" target="_blank" rel="noopener noreferrer">
-            <i> <img src="https://cdn.simpleicons.org/xiaohongshu/FF2D55" alt="" width="45" height="45" style="vertical-align:middle;"> </i>
             <span></span>
           </a>
       </div>
 	<div class="footer-col footer-col-3">
     	<!--<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fwillhua127.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a> -->
 	<!-- <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?user=Lxe71v4AAAAJ&hl=en&url=https%3A%2F%2Fscholar.google.com%2Fcitations&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a> -->
-		<p class="text">Last updated: Feb, 2026.<br>The style of this website is borrowed from <a href='https://leoyuan.site/' target="_blank">Zeqing Yuan's</a>.</p>
+		<p class="text">Last updated: August, 2026.<br>Academic homepage of Xuesong Zeng.</p>
 	</div>
   </div>
   </div>

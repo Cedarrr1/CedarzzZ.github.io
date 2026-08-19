@@ -1,0 +1,68 @@
+% Public English CV for the academic homepage.
+% Phone number intentionally omitted.
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=1.45cm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{array}
+\pagestyle{empty}
+\setlist[itemize]{leftmargin=1.35em,itemsep=1pt,topsep=2pt,parsep=0pt}
+\definecolor{accent}{HTML}{9B3022}
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0pt}{}[\vspace{-3pt}\rule{\linewidth}{0.4pt}]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+\newcommand{\entry}[3]{\noindent\textbf{#1}\hfill\textit{#2}\\#3\par}
+
+\begin{document}
+\begin{center}
+  {\LARGE\bfseries Xuesong Zeng}\\[3pt]
+  \href{mailto:xuesong.zeng@csu.edu.cn}{xuesong.zeng@csu.edu.cn} \quad
+  \href{https://github.com/Cedarrr1}{GitHub} \quad
+  \href{https://openreview.net/profile?id=~XueSong_Zeng1}{OpenReview} \quad
+  \href{https://orcid.org/0009-0003-2928-641X}{ORCID}
+\end{center}
+
+\section{Education}
+\entry{Central South University}{Sep. 2023 -- Jun. 2027 (expected)}{B.Eng. in Computer Science and Technology; GPA 90.47/100; rank 22/258 (top 10\%). CET-4: 632; CET-6: 599.}
+
+\section{Research Experience}
+\entry{Research Assistant, BD4UI Lab, Central South University}{Jun. 2025 -- Present}{Supervised by Senzhang Wang and Miao Hao. Research in spatio-temporal data mining; first author of ViCO, accepted to CIKM 2026 Full Research Track.}
+\entry{Research Assistant, DILab, University of Science and Technology of China}{May 2026 -- Present}{Supervised by Pengkun Wang. Research on LLM reasoning and agentic systems.}
+\entry{Visiting Student, National University of Singapore}{Jun. 2025 -- Jul. 2025}{Supervised by Wee-Kek Tan; focused on AIoT full-stack systems.}
+
+\section{Selected Projects}
+\entry{ViCO: Vision-Augmented Time Series Anomaly Detection with Prototype-Guided Coordination}{2025 -- 2026}{\textbf{First author}; accepted to CIKM 2026 Full Research Track. Proposed a visual-temporal coordination framework with prototype retrieval for efficient time-series anomaly detection.}
+\begin{itemize}
+  \item Decoupled temporal numerical modeling and visual structural perception into complementary branches.
+  \item Compressed visual knowledge into a fixed prototype bank to reduce online inference cost.
+\end{itemize}
+
+\entry{Multimodal Detection and Trustworthy Explanation Platform for News}{Mar. 2025 -- Jun. 2025}{\textbf{Team leader}. Built a two-stage pipeline for image forensics, tampered-region localization, and evidence-based explanations for multimodal news.}
+\begin{itemize}
+  \item Fine-tuned Qwen2.5-VL-3B-Instruct with LoRA; image-level accuracy improved from 55.83\% to 82.33\%.
+  \item Achieved 0.84 IoU / 0.90 F1 for tampered-region localization and 97.5\% image-text relation accuracy in the target task domain.
+\end{itemize}
+
+\entry{Action-SRaR: Action-conditioned Step-wise Rubric Rewards}{Jun. 2026 -- Present}{Developing structured reasoning actions and rubric rewards for process supervision in RLVR. A controller-executor framework with counterfactual action selection reduces redundant checks and repeated steps.}
+
+\section{Honors and Awards}
+\begin{itemize}
+  \item National 3rd Prize, 17th Service Outsourcing Innovation and Entrepreneurship Competition, AI Track (2026).
+  \item National 3rd Prize, 16th Service Outsourcing Innovation and Entrepreneurship Competition, Enterprise Track (2025).
+  \item National 3rd Prize, College Students Science and Technology Translation Competition (2023).
+  \item Computer Software Copyright, second responsible person (2026).
+  \item First Prize, Central South China Regional Competition, China Collegiate Computer Design Competition (2025).
+  \item Second Prize, Central China Division, China Collegiate Computer Competition AIGC Innovation Competition (2025).
+\end{itemize}
+
+\section{Additional Activities}
+\begin{itemize}
+  \item Viola Section Leader, Central South University Student Symphony Orchestra (Sep. 2023 -- Present).
+  \item Member, Apple Lab, Central South University (Sep. 2024 -- Present); organized Innosed Minicamp, a student-club hackathon.
+\end{itemize}
+
+\section{Skills}
+Python, C++, JavaScript, LaTeX, and presentation design.
+
+\end{document}
